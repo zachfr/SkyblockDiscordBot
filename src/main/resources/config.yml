@@ -1,0 +1,67 @@
+# Config
+
+# Skyblock plugin available (Hook is automatic): FabledSkyblock, ASkyBlock, SuperiorSkyblock2
+
+Bot prefix: s!
+Bot token: INSERT TOKEN HERE
+
+# Message
+# -- Global --
+No island found: "No island found with that name!"
+
+# -- SuperiorSkyblock2 --
+# -- Island command --
+SuperiorSkyblock2 Island Command:
+  Command: "island"
+  Description: "Get island information from a command."
+  Invalid usage: "Invalid usage \n%BotPrefix%island <PlayerName>"
+  Embed title: "%PlayerName%'s island stats"
+  Size:
+    name: "Size"
+    value: "%Size%X%Size%"
+  Structure:
+    name: "Structure"
+    value: "%Structure%"
+  Levels:
+    name: "Levels"
+    value: "%Level%"
+  Bank Balance:
+    name: "Bank Balance"
+    value: "%BankBalance%"
+  Border Color:
+    name: "Border color"
+    value: "%BorderColor%"
+  Member Count:
+    name: "Member count"
+    value: "%MemberCount%"
+
+# -- Upgrade command --
+SuperiorSkyblock2 Upgrade Command:
+  Command: "upgrade"
+  Description: "Get upgrade island information by a command."
+  Invalid usage: "Invalid usage \n%BotPrefix%upgrade <PlayerName>"
+  Embed title: "%PlayerName%'s upgrade stats"
+  hopperslimit:
+    name: "Hoppers limit"
+    value: "%HoppersLimit%/%HoppersLimitMax%"
+  cropgrowth:
+    name: "Crop growth"
+    value: "%CropGrowth%/%CropGrowthMax%"
+  spawnerrates:
+    name: "Spawner rates"
+    value: "%SpawnerRates%/%SpawnerRatesMax%"
+  mobdrops:
+    name: "Mob drops"
+    value: "%MobDrops%/%MobDropsMax%"
+  memberslimit:
+    name: "Members limit"
+    value: "%MembersLimit%/%MembersLimitMax%"
+  borderlevel:
+    name: "Border level"
+    value: "%BorderLevel%/%BorderLevelMax%"
+  generatorrates:
+    name: "Generator rates"
+    value: "%GeneratorRates%/%GeneratorRatesMax%"
+  minecartslimit:
+    name: "Minecarts limit"
+    value: "%MinecartsLimit%/%MinecartsLimitMax%"

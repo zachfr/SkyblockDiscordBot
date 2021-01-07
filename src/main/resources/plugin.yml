@@ -1,0 +1,7 @@
+name: SkyblockDiscordBot
+version: ${project.version}
+main: me.zachary.skyblockdiscordbot.SkyblockDiscordBot
+api-version: 1.13
+authors: [ Zach_FR ]
+softdepend: [ DiscordBotAPI, FabledSkyBlock, ASkyBlock, SuperiorSkyblock2 ]
+description: Get stats from island on your discord bot
