@@ -2,6 +2,7 @@ package me.zachary.skyblockdiscordbot;
 
 import com.tjplaysnow.discord.object.Bot;
 import com.tjplaysnow.discord.object.CommandSpigotManager;
+import com.tjplaysnow.discord.object.ThreadHandle;
 import com.tjplaysnow.discord.object.ThreadSpigot;
 import me.zachary.skyblockdiscordbot.commands.*;
 import me.zachary.skyblockdiscordbot.commands.fabledskyblock.IslandCommand;
@@ -30,7 +31,6 @@ public final class SkyblockDiscordBot extends JavaPlugin {
         bot.setBotThread(new ThreadSpigot(this));
         bot.setConsoleCommandManager(new CommandSpigotManager());
         bot.addCommand(new HelpCommand(bot));
-        System.out.println("Succesfully load " + bot.getCommands().size() + " commands!");
 
         if(Bukkit.getPluginManager().getPlugin("FabledSkyBlock") != null) {
             Bukkit.getConsoleSender().sendMessage("§2Successful hook FabledSkyblock!");
@@ -50,6 +50,7 @@ public final class SkyblockDiscordBot extends JavaPlugin {
             Bukkit.getConsoleSender().sendMessage("§4No skyblock plugin found! Plugin will be disabled");
             getServer().getPluginManager().disablePlugin(this);
         }
+        System.out.println("Succesfully load " + bot.getCommands().size() + " commands!");
     }
 
     @Override
